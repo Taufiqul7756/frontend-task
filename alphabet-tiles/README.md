@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Alphabet Tile Interaction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React application displays a grid of tiles, each representing a letter of the alphabet in uppercase format. It includes functionality to append clicked letters to a string and replace consecutive letters according to specified rules.
 
-## Available Scripts
+# Static Image
 
-In the project directory, you can run:
+![Task Image](./public/images/task-2.png)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Tile Rendering**: Renders a tile for each letter of the alphabet (A to Z) within a container.
+2. **Click Interaction**: When a tile is clicked, the corresponding letter is appended to a string displayed in an HTML element with the ID `outputString`.
+3. **Consecutive Letter Replacement**: If three consecutive letters in the `outputString` are the same, they are replaced with an underscore (`_`). For example, if the user clicks "A", "B", "C", "F", "F", "F", "G" in that order, the `outputString` should display `ABC_G`.
+4. **Multiple Consecutive Letters**: If more than three consecutive letters are the same, they are replaced with the appropriate number of underscores. For instance, if the user clicks "A" six times followed by "B", the `outputString` should display `_B`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Example Output
 
-### `npm test`
+- Initial state: `outputString` is empty.
+- After clicking "A", "B", "C", "F", "F", "F", "G": `outputString` displays `ABC_G`.
+- After clicking "A" six times followed by "B": `outputString` displays `_B`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation and Setup
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/Taufiqul7756/frontend-task.git
+   cd alphabet-tiles
+   ```
+1. **Install dependencies:**:
+   ```sh
+   npm install
+   ```
+1. **Run the application:**:
+   ```sh
+   npm start
+   ```
