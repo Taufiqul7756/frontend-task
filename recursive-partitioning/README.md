@@ -1,4 +1,4 @@
-# Recursive Partitioning Layout Builder
+# Recursive Partitioning
 
 This React application allows users to create a responsive layout by splitting partitions vertically and horizontally. Each partition can be further split, resized, and removed, allowing for a dynamic and customizable layout.
 
