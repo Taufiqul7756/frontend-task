@@ -26,11 +26,11 @@ This React application displays a grid of tiles, each representing a letter of t
    git clone https://github.com/Taufiqul7756/frontend-task.git
    cd alphabet-tiles
    ```
-1. **Install dependencies:**:
+2. **Install dependencies:**:
    ```sh
    npm install
    ```
-1. **Run the application:**:
+3. **Run the application:**:
    ```sh
    npm start
    ```
