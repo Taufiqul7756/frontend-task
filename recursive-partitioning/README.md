@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Recursive Partitioning Layout Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React application allows users to create a responsive layout by splitting partitions vertically and horizontally. Each partition can be further split, resized, and removed, allowing for a dynamic and customizable layout.
 
-## Available Scripts
+# Static Image
 
-In the project directory, you can run:
+![Task Image](./public/images/task-1-initial.png)
 
-### `npm start`
+![Task Image](./public/images/task-1-full.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Initial Partition**: Displays an initial partition with a random color and two buttons named "V" and "H".
+2. **Vertical Split**: Clicking the "V" button will split the partition vertically.
+3. **Horizontal Split**: Clicking the "H" button will split the partition horizontally.
+4. **Color Retention**: After the split, one partition retains the old color, and the new partition gets a new random color.
+5. **Recursive Splitting**: New partitions created via splitting can also be further split.
+6. **Partition Removal**: Any partition can be removed via a button.
+7. **Resizable Partitions**: Partitions can be resized by clicking and dragging (80% Done)
+8. **Snap Ratios**: Partitions can snap to 1/4, 1/2, and 3/4 ratios when resized.
 
-### `npm test`
+## Example Output
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Initial state: One partition with "V" and "H" buttons.
+- After clicking "V" or "H": The partition splits into two.
+- Further splitting and resizing are possible, and partitions can be removed.
 
-### `npm run build`
+## Installation and Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/Taufiqul7756/frontend-task
+   cd recursive-partitioning
+   ```
+2. **Install dependencies:**:
+   ```sh
+   npm install
+   ```
+3. **Run the application:**:
+   ```sh
+   npm start
+   ```
